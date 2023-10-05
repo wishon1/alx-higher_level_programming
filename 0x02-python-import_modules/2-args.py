@@ -14,5 +14,3 @@ if __name__ == "__main__":
         print("{} arguements:".format(arg_byte - 1))
         for count in range(1, arg_byte):
             print("{}: {}".format(count, sys.argv[count]))
-
-
