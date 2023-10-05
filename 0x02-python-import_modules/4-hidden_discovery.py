@@ -7,8 +7,8 @@ if __name__ == "__main__":
 
     byte = dir(_import)
 
-    for count in enumerate(byte):
-        if count[0] == '_':
+    for count, name in enumerate(byte):
+        if name[0] == '_':
             continue
 
-        print(f"{count}")
+        print(f"{name}")
