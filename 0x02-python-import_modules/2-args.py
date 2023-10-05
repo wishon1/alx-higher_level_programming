@@ -1,16 +1,13 @@
 #!/usr/bin/python3
-if __name__ == "__main__":
 
+if __name__ == "__main__":
     from sys import argv
 
-    arg_byte = len(sys.argv)
+    arg_byte = len(argv) - 1
+    arg_str = "argument" if arg_byte == 1 else "arguments"
+    delim = "." if arg_byte == 0 else ":"
 
-    if arg_byte == 1:
-        print("0, arguement.")
-    else:
-        if arg_byte == 2:
-            print("{} arguement:".format(arg_byte - 1))
-        else:
-            print("{} arguements:".format(arg_byte - 1))
-        for count in range(1, arg_byte):
-            print("{}: {}".format(count, sys.argv[count]))
+    print("{} {}{}".format(arg_byte, arg_str, delim))
+
+    for count in range(1, arg_byte + 1):
+        print("{}: {}".format(count, argv[count]))
