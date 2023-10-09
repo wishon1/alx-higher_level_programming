@@ -6,7 +6,7 @@ and its first character.
 
 
 def multiple_returns(sentence):
-    if not sentence:
+    if sentence == "":
         x = None
     else:
         _len = len(sentence)
