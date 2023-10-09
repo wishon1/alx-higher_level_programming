@@ -5,12 +5,12 @@ function that prints a matrix of integers.
 
 
 def print_matrix_integer(matrix=[[]]):
-    for count in matrix:
+    for row in matrix:
         i = 1
-        for index in count:
-            if i == len(count):
+        for index in row:
+            if i == len(row):
                 print("{:d}".format(index), end="")
             else:
-                print("{:d}".format(index), end="")
+                print("{:d} ".format(index), end="")
             i = i + 1
         print()
