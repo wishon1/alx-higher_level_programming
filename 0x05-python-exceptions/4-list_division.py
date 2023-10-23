@@ -1,13 +1,12 @@
 #!/usr/bin/python3
 def list_division(my_list_1, my_list_2, list_length):
-    """ function that divides element by element 2 lists."""
+    index = 0
     new_list = []
-    i = 0
     result = 0
 
-    while i < list_length:
+    while index < list_length:
         try:
-            result = my_list_1[i] / my_list_2[i]
+            result = my_list_1[index] / my_list_2[index]
         except TypeError:
             print("wrong type")
             result = 0
@@ -19,6 +18,5 @@ def list_division(my_list_1, my_list_2, list_length):
             result = 0
         finally:
             new_list.append(result)
-            i += 1
-
-        return new_list
+            index += 1
+    return new_list
