@@ -3,5 +3,6 @@
 
 
 class Square:
+    """ function that defines the size of the square """
     def __init__(self, TheSize):
         self.size = TheSize
