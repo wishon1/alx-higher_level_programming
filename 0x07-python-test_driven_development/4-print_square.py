@@ -12,6 +12,13 @@ def print_square(size):
         size: The size of the square (int or float)
 
     Return: returns a squre with character #
+
+    Example:
+        >>> print_square(4)
+        #####
+        #####
+        #####
+        #####
     """
     if type(size) is not int:
         raise TypeError("size must be an integer")
@@ -19,7 +26,6 @@ def print_square(size):
         raise ValueError("size must be >= 0")
     if isinstance(size, float) < 0:
         raise TypeError("size must be an integer")
-    
     count = 0
     while count < size:
         for _ in range(size):
