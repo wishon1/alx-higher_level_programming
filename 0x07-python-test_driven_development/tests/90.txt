@@ -1,0 +1,48 @@
+=============================================================
+matrix_divided - the function divides all elements of a matrix
+matrix: The matrix containing the elements to divide
+div: The divisor which must be an integer
+
+=============================================================
+>>> matrix_divided = __import__("2-matrix_divided").matrix_divided
+
+=============================================================
+# if div is an integer
+	>>> matrix_divided([1, 2, 3], [4, 5, 6], 3)
+	[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]
+
+=============================================================
+# if div is a string
+	>>> matrix_divided([1, 2, 3], [4, 5, 6], "4")
+	Traceback (most recent call last):
+	TypeError: div must be an integer
+
+==============================================================
+#if div is 0
+	>>> matrix_divided([1, 2, 3], [4, 5, 6], 0)
+	Traceback (most recent call last):
+	ZeroDivisionError: div must be greater than 0
+
+===============================================================
+# if both rows of marix are not the same size
+	>>> matrix_divided([1, 2, 3], [4, 5], 2)
+	Traceback (most recent call last):
+	TypeError: Each row of matrix must have the same size
+
+===============================================================
+# if the matrix is a string
+	>>> matrix_divided([1, 2, "Honest"], [4, "wisdom", 6], 2)
+	Traceback (most recent call last):
+	TypeError: matrix must be an integer
+
+===============================================================
+# if the matrix is emty
+	>>> matrix_divided(None, 2)
+	Traceback (most recent call last):
+	TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+===============================================================
+# if matrix is a dictionary
+	>>> matrix_divided({"key": [1,2,3], "key_2": [2, 4, 5]}, 5)
+	Traceback (most recent call last):
+	TypeError: matrix must be a matrix (list of lists) of integers/floats
