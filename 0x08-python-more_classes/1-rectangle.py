@@ -6,10 +6,13 @@ of getters and setters
 
 
 class Rectangle:
-    def __init__(self, width=0, height=0):
-        """ __init__: used to initialize the the attribute
+    """ A rectangle that defines a class
             width: the width
             height: the height.
+        """
+
+    def __init__(self, width=0, height=0):
+        """ __init__: used to initialize the the attributes
         """
         self.__width = width
         self.__height = height
