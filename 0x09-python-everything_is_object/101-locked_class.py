@@ -1,14 +1,15 @@
 #!/usr/bin/python3
-""" cliass LockedClass with no class or object attribute, that prevents
-    the user from dynamically creating new instance attributes, except if
-    the new instance attribute is called first_name
-    class LockedClass
+"""
+This class enforces the instantiation of a single attribute, 'first_name.'
+Users are restricted from creating any additional attributes during the
+initialization process. This restriction is implemented to ensure a streamlined
+and standardized approach to attribute handling within the class, promoting a
+more organized and focused data structure.
 """
 
 
 class LockedClass:
+    """
+    class enforces the instantiation of a single attribute, 'first_name.
+    """
     __slots__ = ["first_name"]
-
-    def __init__(self):
-        """__init__ class method for initialization"""
-        pass
