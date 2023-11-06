@@ -2,7 +2,7 @@
 """Rectangle that inherits from BaseGeometry (7-base_geometry.py)"""
 
 
-class BaseGeometry():
+class BaseGeometry:
     """ class BaseGeometry """
     def area(self):
         """ raise exception error if area is not implemented """
@@ -31,8 +31,3 @@ class Rectangle(BaseGeometry):
         self.__height = height
         self.integer_validator("width", width)
         self.integer_validator("height", height)
-
-
-if __name__ == "__main__":
-    import doctest
-    doctest.testmod()
