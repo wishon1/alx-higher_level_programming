@@ -19,9 +19,9 @@ if __name__ == "__main__":
         # excluding the script name
         loaded_data = add_item_data + argv[1:]
 
-    # handle the case where the JSON file does not exist or is empty
-    except (FileNotFoundError, json.JSONDecodeError):
-        add_item_data = []
+        # handle the exception when the 'add_item.json' file is not found
+    except FileNotFoundError:
+        # considering only the command-line arguments excluding the script name
         loaded_data = argv[1:]
 
     save_to_json_file(loaded_data, "add_item.json")
