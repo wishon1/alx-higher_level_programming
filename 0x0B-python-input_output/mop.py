@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-""" class Student that defines a student by:
-    (based on 9-student.py)
-"""
+""" This module supplies one class"""
 
 
 class Student:
@@ -14,8 +12,7 @@ class Student:
 
     def to_json(self, attrs=None):
         """Get a dictionary representation of the student class """
-
         if (type(attrs) is list and
-                all(type(elem) is str for elem in attrs)):
-            return {e: getattr(self, e) for e in attrs if hasattr(self, e)}
+                all(type(ele) is str for ele in attrs)):
+            return {k: getattr(self, k) for k in attrs if hasattr(self, k)}
         return self.__dict__
