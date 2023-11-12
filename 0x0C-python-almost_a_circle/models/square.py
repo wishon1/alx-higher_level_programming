@@ -12,7 +12,7 @@ class Square(Rectangle):
         """ constructor for initialization """
         super().__init__(size, size, x, y, id)
 
-    def __self__(self):
+    def __str__(self):
         """
             overloading __str__ method should return [Square] (<id>) <x>/<y> 
             - <size> - in our case, width or height
@@ -35,15 +35,9 @@ class Square(Rectangle):
 
     def update(self, *args, **kwargs):
         """ using variadix arguments and key words arguements"""
-        len_args = int(len(args))
-        if len_args >= 1:
-            self.id = args[0]
-        if len_args >= 2:
-            self.size = args[1]
-        if len_args >= 3:
-            self.x = args[2]
-        if len_args >= 4:
-            self.y = args[3]
+        attributes = ["id", "size", "x", "y"]
+        for index, value in enumerate(args):
+            setattr(self, attributes[index], value)
 
         for key, value in kwargs.items():
             setattr(self, key, value)
