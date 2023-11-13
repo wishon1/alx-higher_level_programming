@@ -43,10 +43,19 @@ class Base:
             if list_objs is None:
                 file_ptr.write("[]")
             else:
-                newListDic = []
-                for index in list_objs:
-                    newListDic.append(index.to_json_string())
-                # use the Base.to_json_string method to convert the list of
-                # dictionaries into a JSON-formatted string and write it to the
-                # file using the jsonfile.write method.
-                file_ptr.write(Base.to_json_string(newListDic))
+                newListDic = [index.to_dictionary() for index in list_objs]
+                # Use the Base class to convert the list of dictionaries into a 
+                # JSON-formatted string
+            file_ptr.write(Base.to_json_string(newListDic))
+
+    @staticmethod
+    def from_json_string(json_string):
+        """returns the list of the JSON string representation json_string"""
+        if json_string is None:
+            return []
+        else:
+            return json.loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        """eturns an instance with all attributes already set"""
