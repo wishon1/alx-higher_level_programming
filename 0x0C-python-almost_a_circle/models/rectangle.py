@@ -91,12 +91,13 @@ class Rectangle(Base):
 
     def __str__(self):
         """returns [Rectangle] (<id>) <x>/<y> - <width>/<height> """
-        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y, 
-                self.width, self.height)
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(
+                self.id, self.x, self.y, self.width, self.height
+                )
 
     def update(self, *args, **kwargs):
-        """ Update the class Rectangle by adding the public method 
-            def update(self, *args): that assigns an argument to each attribute:
+        """ adding the public method def update(self, *args): that
+            assigns an argument to each attribute
         """
         arg_len = int(len(args))
         if arg_len >= 1:
@@ -109,11 +110,11 @@ class Rectangle(Base):
             self.x = args[3]
         if arg_len >= 5:
             self.y = args[4]
-        
+
         for key, value in kwargs.items():
             setattr(self, key, value)
 
     def to_dictionary(self):
         " returns the dictionary representation of a Rectangle "
-        return {"x": self.x, "y": self.y, "id": self.id, "height": self.height, 
+        return {"x": self.x, "y": self.y, "id": self.id, "height": self.height,
                 "width": self.width}
