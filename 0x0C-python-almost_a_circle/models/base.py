@@ -44,7 +44,7 @@ class Base:
                 file_ptr.write("[]")
             else:
                 newListDic = [index.to_dictionary() for index in list_objs]
-                # Use the Base class to convert the list of dictionaries into a 
+                # Use the Base class to convert the list of dictionaries into a
                 # JSON-formatted string
             file_ptr.write(Base.to_json_string(newListDic))
 
@@ -59,3 +59,21 @@ class Base:
     @classmethod
     def create(cls, **dictionary):
         """eturns an instance with all attributes already set"""
+
+        # check if the dectionary is not empty
+        if dictionary:
+            # check if the the name of the dictionary is Rectangle
+            if cls.__name__ == "Rectangle":
+                # create a new instance with default width and height
+                new_instance = cls(1, 1)
+            else:
+                # assume it's Square and create an instance with default size
+                new_instance = cls(1)
+
+            # Update the instance's attributes using values from the dictionary
+            new_instance.update(**dictionary)
+            return new_instance
+
+    @classmethod
+    def load_from_file(cls):
+
