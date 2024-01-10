@@ -2,8 +2,6 @@
 ## JavaScript
 By: Guillaume
 Weight: 1
-Ongoing second chance project - started Jan 9, 2024 12:00 AM, must end by Jan 11, 2024 12:00 AM
-An auto review will be launched at the deadline
 
 ### Resources
 Read or watch:
@@ -17,6 +15,22 @@ Read or watch:
 - [Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
 - [this/self](https://alistapart.com/article/getoutbindingsituations/)
 - [Modern JS](https://github.com/mbeaudru/modern-js-cheatsheet)
+
+## Concepts Covered
+
+### 1. Object-Oriented Programming (OOP) Principles
+   - **Class Creation**: Illustrates the creation of a `Rectangle` class to model rectangle objects.
+   - **Encapsulation**: Demonstrates encapsulation by defining methods within the `Rectangle` class to manipulate its properties.
+
+### 2. JavaScript Functionalities
+   - **Module Import**: Shows how to import a module using `require()` in Node.js.
+   - **Class Instantiation**: Explains the process of creating instances of a class using the `new` keyword.
+   - **Method Invocation**: Demonstrates invoking methods to perform specific actions on objects.
+
+### 3. Basic Geometric Operations
+   - **Printing Dimensions**: Displays the width and height of the rectangle.
+   - **Doubling Size**: Doubles the dimensions of the rectangle, effectively scaling it.
+   - **Rotation**: Swaps the width and height of the rectangle, simulating a rotation operation.
 
 ### Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
