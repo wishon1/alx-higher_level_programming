@@ -15,6 +15,8 @@ if __name__ == "__main__":
                          ORDER BY `id`".format(argv[4]))
 
     for state in db_interact.fetchall():
-        print(state)
+        if state[1] == argv[4]:
+            print(state)
 
+    db_interact.close()
     db.close()
