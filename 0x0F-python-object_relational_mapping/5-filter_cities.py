@@ -13,7 +13,7 @@ if __name__ == "__main__":
     cursor = db.cursor()
     cursor.execute("""SELECT cities.name FROM cities
             JOIN states ON cities.state_id = states.id
-            where states.name = %s""", (argv[4],))
+            where states.name = %s""", (argv[4], ))
     rows = cursor.fetchall()
 
     for row in range(len(rows)):
