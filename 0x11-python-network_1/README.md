@@ -7,9 +7,9 @@ This project builds upon the foundational network programming skills developed i
 ## Resources
 Read or watch:
 
-[HOWTO Fetch Internet Resources Using urllib Package](https://docs.python.org/3/howto/urllib2.html)
-[Quickstart with Requests package](https://requests.readthedocs.io/en/latest/)
-[Requests package](https://pypi.org/project/requests/)
+- [HOWTO Fetch Internet Resources Using urllib Package](https://docs.python.org/3/howto/urllib2.html)
+- [Quickstart with Requests package](https://requests.readthedocs.io/en/latest/)
+- [Requests package](https://pypi.org/project/requests/)
 
 ## Project Structure
 - `0-hbtn_status.py`: Python script to fetch and display the status of https://alx-intranet.hbtn.io using urllib.
