@@ -62,7 +62,7 @@ Enjoy the journey!
 
 ## Repository Structure
 
-- GitHub Repository: [alx-higher_level_programming](https://github.com/user/alx-higher_level_programming)
+- GitHub Repository: [alx-higher_level_programming](https://github.com/wishon1/alx-higher_level_programming)
 - Directory: 0x00-python-hello_world
 
 please Feel free to explore the repository for detailed implementations of each task.
