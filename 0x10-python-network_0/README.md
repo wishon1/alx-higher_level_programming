@@ -10,6 +10,14 @@ This project focuses on foundational network programming skills using Python, co
 - `utils.py`: Utility functions for both client and server.
 - `README.md`: Project documentation.
 
+## Resources
+Resources
+Read or watch:
+
+- [HTTP (HyperText Transfer Protocol)](https://www3.ntu.edu.sg/home/ehchua/programming/webprogramming/HTTP_Basics.html) (except: “TRACE” Request Method, “CONNECT” Request Method, Language Negotiation and “Options MultiView” and Character Set Negotiation)
+- [HTTP Cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies)
+
+
 ## Prerequisites
 - Python 3 installed.
 - Basic Python knowledge.
@@ -97,6 +105,3 @@ print(find_peak([]))
 print(find_peak([-2, -4, 2, 1]))
 print(find_peak([4, 2, 1, 2, 2, 2, 3, 1]))
 ```
-
-## License
-Copyright © 2024 ALX, All rights reserved.
