@@ -5,11 +5,11 @@
 
 
 def matrix_divided(matrix, div):
+
     """  divides all elements of a matrix. """
     err_message = "matrix must be a matrix (list of lists) of integers/floats"
-
     if matrix is None or type(matrix) is not list:
-        raise TypeError(Error)
+        raise TypeError(err_message)
 
     if type(matrix[0]) is not list:
         raise TypeError(err_message)
