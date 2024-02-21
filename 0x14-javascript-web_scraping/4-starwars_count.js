@@ -8,6 +8,7 @@ const apiUrl = process.argv[2];
 
 // Character ID of "Wedge Antilles"
 const characterId = 18;
+const url = `https://swapi-api.alx-tools.com/api/people/${characterId}/`;
 
 // Make a request to the films endpoint
 request(apiUrl, (error, response, body) => {
@@ -26,9 +27,7 @@ request(apiUrl, (error, response, body) => {
   // Loop through each film
   filmsData.results.forEach(film => {
     // Check if "Wedge Antilles" is present in the list of characters
-    if (film.characters.includes(
-    `https://swapi-api.alx-tools.com/api/people/${characterId}/`
-    )) {
+    if (film.characters.includes(url)) {
       movieCount++;
     }
   });
